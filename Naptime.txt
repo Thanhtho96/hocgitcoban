@@ -1,0 +1,3 @@
+adb -d shell pm grant com.franco.doze android.permission.DUMP
+adb -d shell pm grant com.franco.doze android.permission.WRITE_SECURE_SETTINGS
+adb -d shell am force-stop com.franco.doze

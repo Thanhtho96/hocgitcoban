@@ -1,0 +1,4 @@
+var items = $('body').getElementsByClassName("pl-video-edit-remove-liked-video"); 
+for(var i = 0; i < items.length; i++){
+    items[i].click();
+}
