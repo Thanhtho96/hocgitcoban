@@ -1,1 +1,0 @@
-sc stop "MySQL80"

@@ -1,3 +1,0 @@
-C:\Users\thanh\Downloads\eclipse\eclipse.exe -data D:\workspace\JavaWeb
-
-C:\Users\thanh\Downloads\eclipse\eclipse.exe -data D:\workspace
