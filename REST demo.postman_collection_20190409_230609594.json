@@ -1,0 +1,471 @@
+{
+	"info": {
+		"_postman_id": "ad0d6383-6b83-4adb-a1e7-46f37650b4ca",
+		"name": "REST demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listJob",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/job/list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"job",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addJob",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "categoryId",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Need a handyman who can fix my toilet ",
+							"type": "text"
+						},
+						{
+							"key": "detail",
+							"value": "My toilet is broken so I need a handyman that can come to my house to fix the toilet on 29/10/2017",
+							"type": "text"
+						},
+						{
+							"key": "budgetMin",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "budgetMax",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "deadline",
+							"value": "2019-04-10",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Patrick st, Silk city, London",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "36.893680",
+							"type": "text"
+						},
+						{
+							"key": "lng",
+							"value": "81.409857",
+							"type": "text"
+						},
+						{
+							"key": "bidMin",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "bidMax",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "interviewing",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "hired",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "accountId",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "A",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/job/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"job",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateJob",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "categoryId",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Need a handyman who can fix my toilet",
+							"type": "text"
+						},
+						{
+							"key": "detail",
+							"value": "My toilet is broken so I need a handyman that can come to my house to fix the toilet on 29/10/2017",
+							"type": "text"
+						},
+						{
+							"key": "budgetMin",
+							"value": "700",
+							"type": "text"
+						},
+						{
+							"key": "budgetMax",
+							"value": "950",
+							"type": "text"
+						},
+						{
+							"key": "deadline",
+							"value": "2019-04-05",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Patrick st, Silk city, London",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "36.893680",
+							"type": "text"
+						},
+						{
+							"key": "lng",
+							"value": "81.409857",
+							"type": "text"
+						},
+						{
+							"key": "bidMin",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "bidMax",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "interviewing",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "hired",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "accountId",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "A",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/job/update/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"job",
+						"update",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteJob",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/job/11",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"job",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchJobByWord",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "whatUwantToSearch",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/job/searchJobByWord",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"job",
+						"searchJobByWord"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findJobById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/job/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"job",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nearbyJob",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lat",
+							"value": "36.893681",
+							"type": "text"
+						},
+						{
+							"key": "lng",
+							"value": "81.409859",
+							"type": "text"
+						},
+						{
+							"key": "radius",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/job/nearbyJob",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"job",
+						"nearbyJob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchJobByCategory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "categoryId",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/job/searchJobByCategory",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"job",
+						"searchJobByCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filterJob",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lat",
+							"value": "36.893681",
+							"type": "text"
+						},
+						{
+							"key": "lng",
+							"value": "81.409859",
+							"type": "text"
+						},
+						{
+							"key": "radius",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "budgetMin",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "budgetMax",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "createTime",
+							"value": "2019-04-09 23:59:59",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/job/filter",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"job",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
